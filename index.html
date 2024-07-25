@@ -9,28 +9,28 @@
 </head>
 <body>
     <p>
-        <a href="" download="my_painting.png">Download</a><i class="fa fa-refresh refresh-btn"><Strong>Clear</Strong></i></p>
+        <a href="" download="betterthanleo.png">Download</a><i class="fa fa-refresh refresh-btn"><Strong>Clear</Strong></i></p>
         <div id="pen-tools" class="pen-tools">
-            <div id="drawing-colors" class="drawing-colors">
-            <div class="color-circle active" data-color="hotpink" onclick="selectColor(this)"></div>
-            <div class="color-circle" data-color="orange" onclick="selectColor(this)"></div>
-            <div class="color-circle" data-color="red" onclick="selectColor(this)"></div>
-            <div class="color-circle" data-color="yellow" onclick="selectColor(this)"></div>
-            <div class="color-circle" data-color="black" onclick="selectColor(this)"></div>
-            <div class="color-circle" data-color="blue" onclick="selectColor(this)"></div>
-            <div class="color-circle" data-color="white" onclick="selectColor(this)"></div>
-            <div class="color-circle" data-color="green" onclick="selectColor(this)"></div>
-        </div>
-            <div id="favContainer"><label for="favcolor">Favourite Colors:</label>
+       <div id="drawing-colors" class="drawing-colors">
+    <div class="color-circle active" data-color="hotpink" onclick="selectColor(this)" style="background-color: hotpink;"></div>
+    <div class="color-circle" data-color="orange" onclick="selectColor(this)" style="background-color: orange;"></div>
+    <div class="color-circle" data-color="red" onclick="selectColor(this)" style="background-color: red;"></div>
+    <div class="color-circle" data-color="yellow" onclick="selectColor(this)" style="background-color: yellow;"></div>
+    <div class="color-circle" data-color="black" onclick="selectColor(this)" style="background-color: black;"></div>
+    <div class="color-circle" data-color="blue" onclick="selectColor(this)" style="background-color: blue;"></div>
+    <div class="color-circle" data-color="white" onclick="selectColor(this)" style="background-color: white;"></div>
+    <div class="color-circle" data-color="green" onclick="selectColor(this)" style="background-color: green;"></div>
+</div>
+            <div id="favContainer">
                 <input type="color" name="favcolor" id="favcolor" value="#ff0000" onchange="favColor(this)">
             </div>
             <div id="pen-size" class="pen-size">
-                <label for="pen-size"><i class="fa fa-pencil"></i>Size</label>
+                <label for="pen-size">Brush Size</label>
                 <input type="range" name="pen-size" value="10" step="5" min="5" max="40" onchange="penSizeChange(this.value)">
             </div>
         </div>
         <div class="board">
-            <canva width="800px" height="590"></canva>
+            <canvas width="800" height="590"></canvas>
         </div>
 
     <script src="script.js"></script>
